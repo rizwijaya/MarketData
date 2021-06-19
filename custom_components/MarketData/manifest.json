@@ -1,0 +1,11 @@
+{
+  "codeowners": ["rizwijaya"],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/2021-IT-Pemrograman-Integratif/project-3-rizwijaya",
+  "domain": "MarketData",
+  "iot_class": "cloud_polling",
+  "name": "Market Data Cryptocurrency",
+  "requirements": [],
+  "version": "1.0.0"
+}
