@@ -53,3 +53,26 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend( #Set nilai default config
         vol.Optional(CONF_ID, default = ""): cv.string,
     }
 )
+
+
+def setup_platform(hass, config, add_entities, discovery_info=None):
+    _LOGGER.debug("Setup Market Data sensor")
+
+    api_key = config.get(CONF_API_KEY).strip()
+    cryptocurrency_name = config.get(CONF_CRYPTOCURRENCY_NAME).strip()
+    #currency_name = config.get(CONF_CURRENCY_NAME).strip()
+    update_frequency = timedelta(minutes=(int(config.get(CONF_UPDATE_FREQUENCY))))
+    
+    entities = []
+
+    try:
+        entities.append(
+            MarketDataSensor(
+                api_key, cryptocurrency_name, update_frequency
+            )
+        )
+    except urllib.error.HTTPError as error:
+        _LOGGER.error(error.reason)
+        return False
+
+    add_entities(entities)
