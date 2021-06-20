@@ -1,10 +1,9 @@
 {
-  "codeowners": ["rizwijaya"],
+  "codeowners": ["@rizwijaya"],
   "config_flow": false,
   "dependencies": [],
-  "documentation": "https://github.com/2021-IT-Pemrograman-Integratif/project-3-rizwijaya",
+  "documentation": "https://github.com/rizwijaya/MarketData_HomeAssitant",
   "domain": "MarketData",
-  "iot_class": "cloud_polling",
   "name": "Market Data Cryptocurrency",
   "requirements": [],
   "version": "1.0.0"
