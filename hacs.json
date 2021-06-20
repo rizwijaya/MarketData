@@ -1,5 +1,7 @@
 {
   "name": "Market Data Cryptocurrency",
+  "content_in_root": false,
   "render_readme": true,
-  "iot_class": "cloud_polling"
+  "domains": ["sensor"],
+  "homeassistant": "0.100.0"
 }
