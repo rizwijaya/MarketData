@@ -2,7 +2,7 @@
   "codeowners": ["@rizwijaya"],
   "config_flow": false,
   "dependencies": [],
-  "documentation": "https://github.com/2021-IT-Pemrograman-Integratif/project-3-rizwijaya",
+  "documentation": "https://github.com/rizwijaya/MarketData_HomeAssistant",
   "domain": "MarketData",
   "name": "Market Data Cryptocurrency",
   "requirements": [],
