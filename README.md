@@ -12,7 +12,7 @@
 - [Konfigurasi pada Home Assistant](#konfigurasi-pada-home-assistant)
     - [Konfigurasi Project](#konfigurasi-project)
     - [Konfigurasi Tampilan](#konfigurasi-tampilan)
-- [Tampilan pada Home Assistant](#tampilan-pada-home-assistant)
+- [Tampilan pada Home Assistant](#beranda-home-assitant)
 ---
 #### Market Data Cryptocurrency
 Market Data Cryptocurrency merupakan kustom komponen Home Assistant yang memberikan informasi harga aset digital / Cryptocurrency yang mana dalam kustom komponen ini akan mengambil data pasar cryptocurrency secara realtime dan akurat sesuai dengan kondisi pasar saat ini.
