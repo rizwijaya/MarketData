@@ -1,0 +1,166 @@
+type: 'custom:vertical-stack-in-card'
+cards:
+  - type: entities
+    entities:
+      - type: 'custom:template-entity-row'
+        entity: sensor.marketdata_btcusd
+        name: '{{ state_attr(config.entity, ''name'') }}'
+        secondary: '{{ state_attr(config.entity, ''symbol'') }}'
+        image: '{{ state_attr(config.entity, ''logo_url'') }}'
+        state: '${{ state_attr(config.entity, ''price'') | round(2) }}'
+      - type: 'custom:template-entity-row'
+        entity: sensor.marketdata_btcusd
+        name: High
+        icon: 'mdi:currency-usd'
+        state: '${{ state_attr(config.entity, ''high'') | round (2)}}'
+        secondary: >-
+          {{ as_timestamp(state_attr(config.entity, 'high_timestamp')) |
+          timestamp_custom('%d-%m-%Y %H:%M ') }}
+      - type: 'custom:template-entity-row'
+        entity: sensor.marketdata_btcusd
+        name: Crypto Rank
+        icon: 'mdi:chart-line'
+        state: '{{ state_attr(config.entity, ''rank'') }}'
+        secondary: '${{"{:,}".format(state_attr(config.entity, ''market_cap'')|int)}}'
+  - type: 'custom:mini-graph-card'
+    hours_to_show: 3
+    points_per_hour: 60
+    show:
+      icon: false
+      name: false
+    entities:
+      - entity: sensor.marketdata_btcusd
+  - type: entities
+    entities:
+      - entity: sensor.marketdata_btcusd
+        name: 1 Hour
+        type: 'custom:template-entity-row'
+        state: '${{ state_attr(config.entity, ''price_change_h1'') | round(2) }}'
+        secondary: >-
+          {{ state_attr(config.entity, 'price_change_pct_h1')  | multiply(100) |
+          round(4) }}%
+        icon: |
+          {% if state_attr(config.entity, 'price_change_h1') | float > 0 %}
+             mdi:arrow-up-bold
+          {% elif state_attr(config.entity, 'price_change_h1') | float < 0 %}
+             mdi:arrow-down-bold
+          {% else %}
+             mdi:arrow-right-bold
+          {% endif %}
+        card_mod:
+          style: |
+            {% if state_attr(config.entity, 'price_change_h1') | float > 0 %}
+               :host {
+                 --paper-item-icon-color: green;
+                 color: green
+               }
+            {% elif state_attr(config.entity, 'price_change_h1') | float < 0 %}
+               :host {
+                 --paper-item-icon-color: red;
+                 color: red
+               }
+            {% else %}
+               :host {
+                 --paper-item-icon-color: black;
+                 color: black
+               }
+            {% endif %}
+      - entity: sensor.marketdata_btcusd
+        name: 1 Day
+        type: 'custom:template-entity-row'
+        state: '${{ state_attr(config.entity, ''price_change_1d'') | round(2) }}'
+        secondary: >-
+          {{ state_attr(config.entity, 'price_change_pct_1d')  | multiply(100) |
+          round(4) }}%
+        icon: |
+          {% if state_attr(config.entity, 'price_change_1d') | float > 0 %}
+             mdi:arrow-up-bold
+          {% elif state_attr(config.entity, 'price_change_1d') | float < 0 %}
+             mdi:arrow-down-bold
+          {% else %}
+             mdi:arrow-right-bold
+          {% endif %}
+        card_mod:
+          style: |
+            {% if state_attr(config.entity, 'price_change_1d') | float > 0 %}
+               :host {
+                 --paper-item-icon-color: green;
+                 color: green
+               }
+            {% elif state_attr(config.entity, 'price_change_1d') | float < 0 %}
+               :host {
+                 --paper-item-icon-color: red;
+                 color: red
+               }
+            {% else %}
+               :host {
+                 --paper-item-icon-color: black;
+                 color: black
+               }
+            {% endif %}
+      - entity: sensor.marketdata_btcusd
+        name: 7 Days
+        type: 'custom:template-entity-row'
+        state: '${{ state_attr(config.entity, ''price_change_7d'') | round(2) }}'
+        secondary: >-
+          {{ state_attr(config.entity, 'price_change_pct_7d')  | multiply(100) |
+          round(4) }}%
+        icon: |
+          {% if state_attr(config.entity, 'price_change_7d') | float > 0 %}
+             mdi:arrow-up-bold
+          {% elif state_attr(config.entity, 'price_change_7d') | float < 0 %}
+             mdi:arrow-down-bold
+          {% else %}
+             mdi:arrow-right-bold
+          {% endif %}
+        card_mod:
+          style: |
+            {% if state_attr(config.entity, 'price_change_7d') | float > 0 %}
+               :host {
+                 --paper-item-icon-color: green;
+                 color: green
+               }
+            {% elif state_attr(config.entity, 'price_change_7d') | float < 0 %}
+               :host {
+                 --paper-item-icon-color: red;
+                 color: red
+               }
+            {% else %}
+               :host {
+                 --paper-item-icon-color: black;
+                 color: black
+               }
+            {% endif %}
+      - entity: sensor.marketdata_btcusd
+        name: 30 Days
+        type: 'custom:template-entity-row'
+        state: '${{ state_attr(config.entity, ''price_change_30d'') | round(2) }}'
+        secondary: >-
+          {{ state_attr(config.entity, 'price_change_pct_30d')  | multiply(100) |
+          round(4) }}%
+        icon: |
+          {% if state_attr(config.entity, 'price_change_30d') | float > 0 %}
+             mdi:arrow-up-bold
+          {% elif state_attr(config.entity, 'price_change_30d') | float < 0 %}
+             mdi:arrow-down-bold
+          {% else %}
+             mdi:arrow-right-bold
+          {% endif %}
+        card_mod:
+          style: |
+            {% if state_attr(config.entity, 'price_change_30d') | float > 0 %}
+               :host {
+                 --paper-item-icon-color: green;
+                 color: green
+               }
+            {% elif state_attr(config.entity, 'price_change_30d') | float < 0 %}
+               :host {
+                 --paper-item-icon-color: red;
+                 color: red
+               }
+            {% else %}
+               :host {
+                 --paper-item-icon-color: black;
+                 color: black
+               }
+            {% endif %}
