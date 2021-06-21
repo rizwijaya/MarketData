@@ -8,7 +8,7 @@
 #### Daftar Isi
 - [Market Data Cryptocurrency](#market-data-cryptocurrency)
 - [Struktur Project](#struktur-project)
-- [Panduan Instalasi](#panduan-instalasi)
+- [Panduan Instalasi](#panduan-instalasi-installation-guide)
 - [Konfigurasi pada Home Assistant](#konfigurasi-pada-home-assitant)
     - [Konfigurasi Project](#konfigurasi-project)
     - [Konfigurasi Tampilan](#konfigurasi-tampilan)
