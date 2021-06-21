@@ -68,7 +68,7 @@ Pada proses instalasi market data ini menggunakan Home Assistant Community Store
     ```
     Untuk kategori pilih Integration, kemudian pilih Add untuk menambahkan repository Market Data Crytocurrency.
 4. Apabila Market Data Cryptocurrency berhasil ditambahkan akan menampilkan tampilan berikut pada HACS.
-![Instalasi dengan HACS](/Screenshot/1.install.jpg)
+![Instalasi dengan HACS](/Screenshot/1.install.JPG)
 5. Kemudian Pilih Market Data Cryptocurrency dan pilih install, maka HACS akan melakukan instalasi.
 6. Setelah instalasi selesai selanjutnya lakukan restart server Home Assistant anda.
 ###### Instalasi manual pada Custom Component.
@@ -172,11 +172,11 @@ cards:
             {% endif %}
 ```
 Dari konfigurasi tersebut maka akan menghasilkan tampilan kartu sebagai berikut.
-![Instalasi dengan HACS](/Screenshot/tampilankartu.jpg)
+![Instalasi dengan HACS](/Screenshot/tampilankartu.JPG)
 
 ---
 #### Tampilan Pada Home Assitant
 ##### Beranda Home Assitant
-![Instalasi dengan HACS](/Screenshot/beranda.jpg)
+![Instalasi dengan HACS](/Screenshot/beranda.JPG)
 ##### Pada Alat Pengembang Home Assitant
-![Instalasi dengan HACS](/Screenshot/debugging.jpg)
+![Instalasi dengan HACS](/Screenshot/debugging.JPG)
