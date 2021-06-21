@@ -1,0 +1,9 @@
+sensor cryptoBTC:
+  - platform: MarketData
+    api_key: !secret marketData
+    cryptocurrency_name: BTC
+    update_frequency: 15
+  - platform: MarketData
+    api_key: !secret marketData
+    cryptocurrency_name: ETH
+    update_frequency: 15
