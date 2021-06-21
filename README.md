@@ -9,7 +9,7 @@
 - [Market Data Cryptocurrency](#market-data-cryptocurrency)
 - [Struktur Project](#struktur-project)
 - [Panduan Instalasi](#panduan-instalasi-installation-guide)
-- [Konfigurasi pada Home Assistant](#konfigurasi-pada-home-assitant)
+- [Konfigurasi pada Home Assistant](#konfigurasi-pada-home-assistant)
     - [Konfigurasi Project](#konfigurasi-project)
     - [Konfigurasi Tampilan](#konfigurasi-tampilan)
 - [Tampilan pada Home Assistant](#tampilan-pada-home-assistant)
