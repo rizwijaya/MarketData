@@ -1,10 +1,5 @@
 # Market Data Cryptocurrency
 ---
-##### Nama : Muhammad Rizqi Wijaya
-##### NRP : 05311940000014
-##### Departemen : Teknologi Informasi
-##### Project 3 Pemprograman Integratif
----
 #### Daftar Isi
 - [Market Data Cryptocurrency](#market-data-cryptocurrency)
 - [Struktur Project](#struktur-project)
