@@ -59,7 +59,7 @@ Pada proses instalasi market data ini menggunakan Home Assistant Community Store
 2. Pada tampilan integrations selanjutnya pilih menu titik tiga dipojok kanan atas dan pilih Custom Repositories.
 3. Selanjutnya masukan link repository berikut pada form Add Custom Repository URL.
     ```
-    https://github.com/rizwijaya/MarketData_HomeAssistant
+    https://github.com/rizwijaya/MarketData
     ```
     Untuk kategori pilih Integration, kemudian pilih Add untuk menambahkan repository Market Data Crytocurrency.
 4. Apabila Market Data Cryptocurrency berhasil ditambahkan akan menampilkan tampilan berikut pada HACS.
